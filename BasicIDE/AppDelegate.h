@@ -7,8 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MainText.h"
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTextViewDelegate>{
+	MainText *idetext;
+	NSTextStorage *mystorage;
+	id eventMonitor;
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+}
 
 
 @end
